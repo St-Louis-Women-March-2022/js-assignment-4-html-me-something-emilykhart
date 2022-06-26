@@ -1,1 +1,259 @@
-/* Write your CSS here! */
+body{
+    background-color: #FDFEEE; 
+    display: block;
+    margin: 8px;
+    background-image: url(images/frame-967.png);
+    background-repeat: repeat;
+  }
+.sweethartBanner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 500px;
+}
+
+
+h2{
+    margin: 8px;
+    text-align: center;
+    }
+#subHead{
+    margin: 8px;
+    text-align: center;
+}
+
+#aboutMe{
+    margin: 8px;
+    text-align: left;
+    display: block;
+    padding-left: 200px;
+    padding-right: 200px;
+    }
+
+#schoolText{
+  display: block;
+  text-align: right;
+  padding-left: 200px;
+  padding-right: 775px;
+  z-index: 3;
+  margin: 8px;
+  font-size: 14pt;
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: purple;
+}
+
+#schoolText{
+  display: block;
+  text-align: right;
+  padding-left: 200px;
+  padding-right: 775px;
+  z-index: 3;
+  margin: 8px;
+  font-size: 14pt;
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: purple;
+}
+
+.rowSchool{
+  padding-left: 750px;
+  padding-right: 10px;
+  padding-top: -150px;
+  margin-top: -370px;
+}
+
+.rowSchool > .columnMain {
+  padding: 0 0px;
+}
+
+#pastryHead{
+  margin: 8px;
+  padding-left: 200px;
+  padding-right: 775px;
+  text-align: right;
+  display: block;
+  font-size: 30pt;
+}
+
+
+#personalHeader{
+  margin: 8px;
+  padding-left: 200px;
+  padding-right: 775px;
+  text-align: right;
+  display: block;
+  font-size: 30pt;
+}
+
+
+.rowSchool:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowWork{
+  padding-left: 205px;
+  padding-right: 10px;
+}
+.rowWork > .columnMain {
+  padding: 0 0px;
+}
+
+.rowWork:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.columnMainWork {
+  float: left;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #FDFEEE;
+}
+
+.modalWork {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #FDFEEE;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.modal-contentWork {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: purple;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertextWork {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  /* transition: 0.3s; */
+}
+
+.hover-shadow:hover {
+  transform: scale(1.5);
+  box-shadow: 0 10px 18px 0 rgba(217, 72, 236, 0.2), 0 10px 32px 0 rgba(217, 72, 236, 0.2);
+  }
