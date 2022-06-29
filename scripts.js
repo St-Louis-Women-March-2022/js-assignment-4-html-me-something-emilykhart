@@ -80,3 +80,44 @@ function showSlidesWork(n) {
   captionTextWork.innerHTML = dotsWork[slideIndexWork-1].alt;
 }
 
+// Open the Modal
+function openModalPersonal() {
+  document.getElementById("myModalPersonal").style.display = "block";
+}
+
+// Close the Modal
+function closeModalPersonal() {
+  document.getElementById("myModalPersonal").style.display = "none";
+}
+
+let slideIndexPersonal = 1;
+showSlidesPersonal(slideIndexPersonal);
+
+// Next/previous controls
+function plusSlidesPersonal(n) {
+  showSlidesPersonal(slideIndexPersonal += n);
+}
+
+// Thumbnail image controls
+function currentSlidePersonal(n) {
+  showSlidesPersonal(slideIndexPersonal = n);
+}
+
+function showSlidesPersonal(n) {
+  let i;
+  let slidesPersonal = document.getElementsByClassName("mySlidesPersonal");
+  let dotsPersonal = document.getElementsByClassName("demoSchool");
+  let captionTextPersonal = document.getElementById("captionPersonal");
+  if (n > slidesPersonal.length) {slideIndexPersonal = 1}
+  if (n < 1) {slideIndexPersonal = slidesPersonal.length}
+  for (i = 0; i < slidesPersonal.length; i++) {
+    slidesPersonal[i].style.display = "none";
+  }
+  for (i = 0; i < dotsPersonal.length; i++) {
+    dotsPersonal[i].className = dotsPersonal[i].className.replace(" activeSchool", "");
+  }
+  slidesPersonal[slideIndexPersonal-1].style.display = "block";
+  dotsPersonal[slideIndexPersonal-1].className += " activeSchool";
+  captionTextPersonal.innerHTML = dotsPersonal[slideIndexPersonal-1].alt;
+}
+
