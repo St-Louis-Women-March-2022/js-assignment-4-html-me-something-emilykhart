@@ -5,151 +5,212 @@
       <link rel="stylesheet" type="text/css" href="styles.css">
       <link rel="icon" href="images/bakingIcon.png">
       <script src = "scripts.js"></script>
+      <script>
+        function fun() {
+      alert("Caution: This page may cause cravings. You have been warned!");
+   }
+        </script>
    </head>
-   <body>
+   <body onload="fun()">
       <main>
          <header>
             <img class="sweethartBanner" src="images/Website Banner.png" alt="SweetHarts Title Banner">
             <h2>Explore My Favorite Creations!</h2>
-            <p id="subHead">Caution: You may have overwhelming cravings after looking through my pictures. I am not held responsible!</p>
          </header>
-         <article id="aboutMe">
-            <h3 id="aboutMeHeader">About Me</h3>
-               <p>I became a pastry chef officially in 2017, but the journey began a long time before. When I was a kid, I loved making cookies with my Mom and Dad. I remember specifically one time with
-               my Dad where we forgot baking soda. Guess what? You definitely need that if you want any chance at a proper cookie. From there, I started making my own and actually following the recipe.
-               As the years went on, I branched off from just your plain chocolate chip cookies to even more adventurous items. When I moved to Indianapolis in 2012, baking became the way I spent my free time 
-               and it soon became a passion. In 2014, a major shift in the way my company operated and I knew I wanted a change. So I called up my Mom, and asked if I could move back home and go to culinary school.
-               Five months later, I was back in St. Louis, enrolled in school, and became a baker at The Cup in the Central West End. I have remained there and grown in my position over the last seven years.
-               Here you will see my favorite things I have created in school, at home, and at work. I love baking and making people smile with their bellies full of sugary goodness!
-               </p>
-         </article>
+         <div class="box">
+          <a class="button" href="#popup1">About Me</a>
+        </div>
+        
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>About Me</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              <article>
+              <p>I became a pastry chef officially in 2017, but the journey began a long time before. When I was a kid, I loved making cookies with my Mom and Dad. I remember specifically one time with
+                my Dad where we forgot baking soda. Guess what? You definitely need that if you want any chance at a proper cookie. From there, I started making my own and actually following the recipe.
+                As the years went on, I branched off from just your plain chocolate chip cookies to even more adventurous items.</p> 
+                
+                <p>When I moved to Indianapolis in 2012, baking became the way I spent my free time 
+                and it soon became a passion. In 2014, a major shift in the way my company operated and I knew I wanted a change. So I called up my Mom, and asked if I could move back home and go to culinary school.
+                Five months later, I was back in St. Louis, enrolled in school, and became a baker at The Cup in the Central West End. I have remained there and grown in my position over the last seven years.
+                Here you will see my favorite things I have created in school, at home, and at work. I love baking and making people smile with their bellies full of sugary goodness!
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+        
       
-      <h3 id="pastryHead">Welcome to Pastry School</h3>
+      <h3 id="pastryHead">Welcome to the Thunder Dome</h3>
         <p id="schoolText">In 2015, I enrolled in Forest Park Community College and started their Baking and Pastry Program. Throughout the program, we covered
           breads, pastries, cake decorating, sugar work, and chocolate work. My favorite class was our bread sections. We got to make croissants, 
           bagels, and even designed bread wreaths. My most challenging class was chocolate work. Making a basket out of weaved chocolate almost broke 
           me but I prevailed! After 2 years, I graduated as a Certified Pastry Chef. 
         </p>
       <div class="rowSchool">
-         <div class="columnMain">
-           <img src="images/schoolCollage.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 70%;">
+         <div class="columnMainSchool">
+           <img src="images/schoolCollage.jpg" onclick="openModalSchool();currentSlideSchool(1)" class="hover-shadowSchool" style="width: 70%;">
          </div>
        </div>
        
        <!-- The Modal/Lightbox -->
-       <div id="myModal" class="modal">
-         <span class="close cursor" onclick="closeModal()">&times;</span>
-         <div class="modal-content">
+       <div id="myModalSchool" class="modalSchool">
+         <span class="closeSchool" onclick="closeModalSchool()">&times;</span>
+         <div class="modal-contentSchool">
        
-           <div class="mySlides">
-             <div class="numbertext">1 / 6</div>
+           <div class="mySlidesSchool">
+             <div class="numbertextSchool">1 / 6</div>
              <img src="images/School 1.jpg" style="width:100%" alt="Caption text here">
            </div>
        
-           <div class="mySlides">
-             <div class="numbertext">2 / 6</div>
+           <div class="mySlidesSchool">
+             <div class="numbertextSchool">2 / 6</div>
              <img src="images/School 2.jpg" style="width:100%">
            </div>
        
-           <div class="mySlides">
-             <div class="numbertext">3 / 6</div>
+           <div class="mySlidesSchool">
+             <div class="numbertextSchool">3 / 6</div>
              <img src="images/School 3.jpg" style="width:100%">
            </div>
 
-           <div class="mySlides">
-             <div class="numbertext">4 / 6</div>
+           <div class="mySlidesSchool">
+             <div class="numbertextSchool">4 / 6</div>
              <img src="images/schhol 5.jpg" style="width:100%">
            </div>
 
-           <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
+           <div class="mySlidesSchool">
+            <div class="numbertextSchool">5 / 6</div>
             <img src="images/School 6.jpg" style="width:100%">
             </div>
 
-            <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
+            <div class="mySlidesSchool">
+            <div class="numbertextSchool">6 / 6</div>
             <img src="images/School 7 - Copy.jpg" style="width:100%">
             </div>
        
            <!-- Next/previous controls -->
-           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           <a class="prevSchool" onclick="plusSlidesSchool(-1)">&#10094;</a>
+           <a class="nextSchool" onclick="plusSlidesSchool(1)">&#10095;</a>
        
            <!-- Caption text -->
-           <div class="caption-container">
-             <p id="caption"></p>
+           <div class="caption-containerSchool">
+             <p id="captionSchool"></p>
            </div>
+
+           <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolOneThumb.jpg" onclick="currentSlideSchool(1)" alt="Nature">
+          </div>
+      
+          <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolTwoThumb.jpg" onclick="currentSlideSchool(2)" alt="Snow">
+          </div>
+      
+          <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolThreeThumb.jpg" onclick="currentSlideSchool(3)" alt="Mountains">
+          </div>
+      
+          <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolFourThumb.jpg" onclick="currentSlideSchool(4)" alt="Lights">
+          </div>
+
+          <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolFiveThumb.jpg" onclick="currentSlideSchool(5)" alt="Lights">
+          </div>
+
+          <div class="columnSchool">
+            <img class="demoSchool" src="images/schoolSixThumb.jpg" onclick="currentSlideSchool(6)" alt="Lights">
+          </div>
          </div>
        </div>
 
-       <div class="rowWork">
+      <h3 id="workHeader">My Cup Runneth Over!</h3>
+      <p id="workText">Three weeks after I came back to St. Louis, I accepted a job as a Baker at The Cup in the Central West End. Since then, I have been Head Baker, Production Supervisor, and just this summer 
+        will transition into the Corporate Information Coordinator and Wholesale Manager. My favorite thing about my job is creating our April Fools' Day Cupcake. Every year I create an imposter cupcake
+        that looks like something totally different but made of cupcakes! This past year was Chicken and Waffles! It is an intense four months of preparation but it keeps me creatively satisfied. 
+      </p>
+
+      <div class="rowWork">
         <div class="columnMainWork">
-          <img src="images/workCollage.png" onclick="openModalWork();currentSlideWork(1)" class="hover-shadow" style="width: 68%">
+          <img src="images/workCollage.png" onclick="openModalWork();currentSlideWork(1)" class="hover-shadowWork" style="width: 50%;">
         </div>
       </div>
       
       <!-- The Modal/Lightbox -->
       <div id="myModalWork" class="modalWork">
-        <span class="close cursor" onclick="closeModalWork()">&times;</span>
+        <span class="closeWork" onclick="closeModalWork()">&times;</span>
         <div class="modal-contentWork">
       
           <div class="mySlidesWork">
-            <div class="numbertextWork">1 / 8</div>
-            <img src="images/workOne.jpg" style="width:100%" alt="">
+            <div class="numbertextWork">1 / 6</div>
+            <img src="images/workOne.jpg" style="width:100%" alt="Caption text here">
           </div>
       
           <div class="mySlidesWork">
-            <div class="numbertextWork">2 / 8</div>
+            <div class="numbertextWork">2 / 6</div>
             <img src="images/workTwo.jpg" style="width:100%">
           </div>
       
           <div class="mySlidesWork">
-            <div class="numbertextWork">3 / 8</div>
+            <div class="numbertextWork">3 / 6</div>
             <img src="images/workThree.jpg" style="width:100%">
           </div>
 
           <div class="mySlidesWork">
-            <div class="numbertextWork">4 / 8</div>
+            <div class="numbertextWork">4 / 6</div>
             <img src="images/workFour.jpg" style="width:100%">
           </div>
 
           <div class="mySlidesWork">
-           <div class="numbertextWork">5 / 8</div>
+           <div class="numbertextWork">5 / 6</div>
            <img src="images/workFive.jpg" style="width:100%">
            </div>
 
            <div class="mySlidesWork">
-           <div class="numbertextWork">6 / 8</div>
+           <div class="numbertextWork">6 / 6</div>
            <img src="images/workSix.jpg" style="width:100%">
            </div>
-
-           <div class="mySlidesWork">
-            <div class="numbertextWork">7 / 8</div>
-            <img src="images/workSeven.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlidesWork">
-              <div class="numbertextWork">8 / 8</div>
-              <img src="images/workEight.jpg" style="width:100%">
-              </div>
       
           <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlidesWork(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlidesWork(1)">&#10095;</a>
+          <a class="prevWork" onclick="plusSlidesWork(-1)">&#10094;</a>
+          <a class="nextWork" onclick="plusSlidesWork(1)">&#10095;</a>
       
           <!-- Caption text -->
-          <div class="caption-container">
-            <p id="caption"></p>
+          <div class="caption-containerWork">
+            <p id="captionWork"></p>
+          </div>
+
+          <div class="columnWork">
+            <img class="demoWork" src="images/workOne.jpg" onclick="currentSlideWork(1)" alt="Nature">
+          </div>
+      
+          <div class="columnWork">
+            <img class="demoWork" src="images/workTwo.jpg" onclick="currentSlideWork(2)" alt="Snow">
+          </div>
+      
+          <div class="columnWork">
+            <img class="demoWork" src="images/workThree.jpg" onclick="currentSlideWork(3)" alt="Mountains">
+          </div>
+      
+          <div class="columnWork">
+            <img class="demoWork" src="images/workFour.jpg" onclick="currentSlideWork(4)" alt="Lights">
+          </div>
+
+          <div class="columnWork">
+            <img class="demoWork" src="images/workFive.jpg" onclick="currentSlideWork(5)" alt="Lights">
+          </div>
+
+          <div class="columnWork">
+            <img class="demoWork" src="images/workSix.jpg" onclick="currentSlideWork(6)" alt="Lights">
           </div>
         </div>
       </div>
-      <h3 id="personalHeader">Welcome to Pastry School</h3>
-      <p id="personalText">In 2015, I enrolled in Forest Park Community College and started their Baking and Pastry Program. Throughout the program, we covered
-        breads, pastries, cake decorating, sugar work, and chocolate work. My favorite class was our bread sections. We got to make croissants, 
-        bagels, and even designed bread wreaths. My most challenging class was chocolate work. Making a basket out of weaved chocolate almost broke 
-        me but I prevailed! After 2 years, I graduated as a Certified Pastry Chef. 
-      </p>
+
+      
+
+      <h3 id="mainHeading">Secret Red Title!</h3>
+      <p id="testP" class="funParagraph">Hello! This is my green fun paragraph!</p>
       </main>
-      <footer>Email info!</footer>
+      <footer><a href=https://www.cravethecup.com><p>If you would like to order cupcakes! Check out The Cup &copy;</p></a></footer>
    </body>
 </html>
